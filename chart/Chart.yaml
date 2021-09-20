@@ -1,0 +1,10 @@
+apiVersion: v2
+name: bucketlist
+description: BucketList is a ToDo application for things to do before you dissapear.
+type: application
+version: 0.0.1
+appVersion: 0.0.13
+dependencies: 
+  - name: postgresql
+    version: 10.9.5
+    repository: https://charts.bitnami.com/bitnami

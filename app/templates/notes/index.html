@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Notes{% endblock %}</h2>
+{% endblock %}
+
+{% block content %}
+  {% for note in notes %}
+    <div class="note">
+        {{ note['text'] }}<div class="buttons"><a href="{{ url_for('notes.done', id=note['id']) }}" class="btn btn-success"><i class="fas fa-check-circle"></i></a> <a href="{{ url_for('notes.delete', id=note['id']) }}" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a></div>
+    </div>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+<h2>Add an item</h2>
+<form action="{{ url_for('notes.create') }}" method="post">
+    <input name="text" id="text" value="{{ request.form['text'] }}" required>
+    <input type="submit" value="Add">
+  </form>
+<h2>Done</h2>
+{% for note in done %}
+    <div class="note">
+      {{ note['text'] }}<div class="buttons"><a href="{{ url_for('notes.done', id=note['id']) }}" class="btn btn-warning"><i class="fas fa-arrow-alt-circle-up"></i></a> <a href="{{ url_for('notes.delete', id=note['id']) }}" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a></div>
+    </div>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

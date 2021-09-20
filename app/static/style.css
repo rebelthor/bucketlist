@@ -1,0 +1,156 @@
+html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    background: #eee;
+    padding: 1rem;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    background: white;
+}
+
+h1,
+h2 {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.flash {
+    margin: 1em 0;
+    padding: 1em;
+    background: #cae6f6;
+    border: 1px solid #377ba8;
+}
+
+.note {
+    position: relative;
+    height: 34px;
+    line-height: 34px;
+    background: #F1F1F1;
+    padding: 5px;
+    margin: auto;
+}
+
+.note div {
+    position: absolute;
+    right: 10px;
+    display: inline
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 4px;
+    width: 12px;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #9e890f;
+    border-color: #9e890f;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid lightgray;
+}
+
+nav {
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+nav h1 {
+    flex: auto;
+    margin: 0;
+}
+
+.content {
+    padding: 0 1rem 1rem;
+}
+
+.content>header {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: flex-end;
+}
+
+.content>header h1 {
+    flex: auto;
+    margin: 1rem 0 0.25rem 0;
+}
+
+.content:last-child {
+    margin-bottom: 0;
+}
+
+.content form {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.content input,
+.content textarea {
+    margin-bottom: 1em;
+}
+
+.content textarea {
+    min-height: 12em;
+    resize: vertical;
+}
+
+input.danger {
+    color: #cc2f2e;
+}
+
+input[type=submit] {
+    align-self: start;
+    min-width: 10em;
+}
+
+.footer {
+    font-size: 8px;
+    text-align: center;
+}
