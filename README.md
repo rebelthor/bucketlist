@@ -14,9 +14,6 @@ Afterwards, the app can be access via http://localhost:5000 in your browser.
 
 Note that running the app without any parameters will cause a fallback to the internal SQLITE database engine, meaning that any changes you do will be lost as soon as the container dies.
 
-## Tools used
-* [The Flask Framework|https://flask.palletsprojects.com/en/2.0.x/]
-* [FontAwesome Icons|https://fontawesome.com/]
 ## K8s Deployment
 
 * Run the terraform code in the _terraform_ folder against your GCP account. Your terraform.tfvars file can be similar to this:
@@ -58,3 +55,10 @@ bucketlist-557bfdcb87-khxdh       1/1     Running   4          15m
 bucketlist-postgresql-primary-0   1/1     Running   0          15m
 bucketlist-postgresql-read-0      1/1     Running   0          15m
 ```
+
+## Tools used and reasons.
+* [The Flask Framework](https://flask.palletsprojects.com/en/2.0.x/) - new learning opportunity.
+* [SLQAlchemy](https://www.sqlalchemy.org/) - Life is sad without an ORM.
+* [FontAwesome Icons](https://fontawesome.com/) - novelty way of adding cool icons.
+* [Terraform](https://www.terraform.io/) - IaC or die.
+* [Helm](https://helm.sh/) - easy deployments to K8s.
